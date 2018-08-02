@@ -13,8 +13,14 @@ Just download the RandomNumber.exe file, no installation needed.
 
 If you feel like the app is helping you and you want do donate you can do so in the following ways:
 
-- Send money via Neteller to Account ID: 451426887322
+- Transfer via Neteller to Account ID: 451426887322
 
-- Send money via PokerStars to user: spxTilt
+- Transfer via PokerStars.EU to user: spxTilt
 
-- Send money via GGPoker to e-mail: joakim(at)barnstenit(dot)se
+- Transfer via PokerStars.ES to user: spxTiltEs
+
+- Transfer via GGPoker to e-mail: joakim(at)barnstenit(dot)se
+
+- Transfer via 888poker to user: spxTilt
+
+- Transfer via PartyPoker is also an available option, send an email to joakim(at)barnstenit(dot)se for details
