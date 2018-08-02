@@ -12,13 +12,16 @@ namespace RandomNumber
             InitializeComponent();
         }
 
+        private void UpdateNumber() => labelNumber.Text = random.Next(1, 101).ToString();
+
         private void timer1_Tick(object sender, EventArgs e)
         {
-            labelNumber.Text = random.Next(1, 101).ToString();
+            UpdateNumber();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            UpdateNumber();
             timer1.Start();
         }
     }
