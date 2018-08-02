@@ -7,6 +7,8 @@ Generates a new number between 1 and 100 every two seconds
 
 Go to [https://github.com/Alstig/RandomNumber/releases](https://github.com/Alstig/RandomNumber/releases) to get the latest release.
 
+Just download the RandomNumber.exe file, no installation needed.
+
 ## Donate
 
 If you feel like the app is helping you and you want do donate you can do so in the following ways:
