@@ -23,4 +23,4 @@ If you feel like the app is helping you and you want do donate you can do so in 
 
 - Transfer via 888poker to user: spxTilt
 
-- Transfer via PartyPoker is also an available option, send an email to joakim(at)barnstenit(dot)se for details
+- Transfer via PartyPoker is also an available option, send an e-mail to joakim(at)barnstenit(dot)se for details
