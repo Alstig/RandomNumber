@@ -13,14 +13,8 @@ Just download the RandomNumber.exe file, no installation needed.
 
 If you feel like the app is helping you and you want do donate you can do so in the following ways:
 
-```bash
-Send money via Neteller to Account ID: 451426887322
-```
+- Send money via Neteller to Account ID: 451426887322
 
-```bash
-Send money via PokerStars to user: spxTilt
-```
+- Send money via PokerStars to user: spxTilt
 
-```bash
-Send money via GGPoker to user: J.Alstig
-```
+- Send money via GGPoker to e-mail: joakim(at)barnstenit(dot)se
