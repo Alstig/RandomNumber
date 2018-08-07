@@ -21,7 +21,7 @@ namespace RandomNumber
             }
             set
             {
-                RootKey.SetValue("Interval", value);
+                RootKey.SetValue("Interval", value.ToString());
             }
         }
 

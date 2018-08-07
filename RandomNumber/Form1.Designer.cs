@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.labelNumber = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.setUpdateIntervalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.secondToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.secondsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,9 +42,11 @@
             this.secondsToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.secondsToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.secondsToolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateNumberOnClickToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectBackgroundColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectTextColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateNumberOnClickToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.doNotAutoupdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,11 +75,6 @@
             this.contextMenuStrip1.Size = new System.Drawing.Size(203, 114);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 2000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // setUpdateIntervalToolStripMenuItem
             // 
             this.setUpdateIntervalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -90,7 +86,8 @@
             this.secondsToolStripMenuItem4,
             this.secondsToolStripMenuItem5,
             this.secondsToolStripMenuItem6,
-            this.secondsToolStripMenuItem7});
+            this.secondsToolStripMenuItem7,
+            this.doNotAutoupdateToolStripMenuItem});
             this.setUpdateIntervalToolStripMenuItem.Image = global::RandomNumber.Properties.Resources.clock_select;
             this.setUpdateIntervalToolStripMenuItem.Name = "setUpdateIntervalToolStripMenuItem";
             this.setUpdateIntervalToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
@@ -99,7 +96,7 @@
             // secondToolStripMenuItem
             // 
             this.secondToolStripMenuItem.Name = "secondToolStripMenuItem";
-            this.secondToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.secondToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.secondToolStripMenuItem.Tag = "1000";
             this.secondToolStripMenuItem.Text = "1 second";
             this.secondToolStripMenuItem.Click += new System.EventHandler(this.secondToolStripMenuItem_Click);
@@ -107,7 +104,7 @@
             // secondsToolStripMenuItem
             // 
             this.secondsToolStripMenuItem.Name = "secondsToolStripMenuItem";
-            this.secondsToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.secondsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.secondsToolStripMenuItem.Tag = "1500";
             this.secondsToolStripMenuItem.Text = "1.5 seconds";
             this.secondsToolStripMenuItem.Click += new System.EventHandler(this.secondToolStripMenuItem_Click);
@@ -115,7 +112,7 @@
             // secondsToolStripMenuItem1
             // 
             this.secondsToolStripMenuItem1.Name = "secondsToolStripMenuItem1";
-            this.secondsToolStripMenuItem1.Size = new System.Drawing.Size(135, 22);
+            this.secondsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.secondsToolStripMenuItem1.Tag = "2000";
             this.secondsToolStripMenuItem1.Text = "2 seconds";
             this.secondsToolStripMenuItem1.Click += new System.EventHandler(this.secondToolStripMenuItem_Click);
@@ -123,7 +120,7 @@
             // secondsToolStripMenuItem2
             // 
             this.secondsToolStripMenuItem2.Name = "secondsToolStripMenuItem2";
-            this.secondsToolStripMenuItem2.Size = new System.Drawing.Size(135, 22);
+            this.secondsToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.secondsToolStripMenuItem2.Tag = "2500";
             this.secondsToolStripMenuItem2.Text = "2.5 seconds";
             this.secondsToolStripMenuItem2.Click += new System.EventHandler(this.secondToolStripMenuItem_Click);
@@ -131,7 +128,7 @@
             // secondsToolStripMenuItem3
             // 
             this.secondsToolStripMenuItem3.Name = "secondsToolStripMenuItem3";
-            this.secondsToolStripMenuItem3.Size = new System.Drawing.Size(135, 22);
+            this.secondsToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.secondsToolStripMenuItem3.Tag = "3000";
             this.secondsToolStripMenuItem3.Text = "3 seconds";
             this.secondsToolStripMenuItem3.Click += new System.EventHandler(this.secondToolStripMenuItem_Click);
@@ -139,7 +136,7 @@
             // secondsToolStripMenuItem4
             // 
             this.secondsToolStripMenuItem4.Name = "secondsToolStripMenuItem4";
-            this.secondsToolStripMenuItem4.Size = new System.Drawing.Size(135, 22);
+            this.secondsToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
             this.secondsToolStripMenuItem4.Tag = "3500";
             this.secondsToolStripMenuItem4.Text = "3.5 seconds";
             this.secondsToolStripMenuItem4.Click += new System.EventHandler(this.secondToolStripMenuItem_Click);
@@ -147,7 +144,7 @@
             // secondsToolStripMenuItem5
             // 
             this.secondsToolStripMenuItem5.Name = "secondsToolStripMenuItem5";
-            this.secondsToolStripMenuItem5.Size = new System.Drawing.Size(135, 22);
+            this.secondsToolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
             this.secondsToolStripMenuItem5.Tag = "4000";
             this.secondsToolStripMenuItem5.Text = "4 seconds";
             this.secondsToolStripMenuItem5.Click += new System.EventHandler(this.secondToolStripMenuItem_Click);
@@ -155,7 +152,7 @@
             // secondsToolStripMenuItem6
             // 
             this.secondsToolStripMenuItem6.Name = "secondsToolStripMenuItem6";
-            this.secondsToolStripMenuItem6.Size = new System.Drawing.Size(135, 22);
+            this.secondsToolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
             this.secondsToolStripMenuItem6.Tag = "4500";
             this.secondsToolStripMenuItem6.Text = "4.5 seconds";
             this.secondsToolStripMenuItem6.Click += new System.EventHandler(this.secondToolStripMenuItem_Click);
@@ -163,17 +160,10 @@
             // secondsToolStripMenuItem7
             // 
             this.secondsToolStripMenuItem7.Name = "secondsToolStripMenuItem7";
-            this.secondsToolStripMenuItem7.Size = new System.Drawing.Size(135, 22);
+            this.secondsToolStripMenuItem7.Size = new System.Drawing.Size(180, 22);
             this.secondsToolStripMenuItem7.Tag = "5000";
             this.secondsToolStripMenuItem7.Text = "5 seconds";
             this.secondsToolStripMenuItem7.Click += new System.EventHandler(this.secondToolStripMenuItem_Click);
-            // 
-            // updateNumberOnClickToolStripMenuItem
-            // 
-            this.updateNumberOnClickToolStripMenuItem.Name = "updateNumberOnClickToolStripMenuItem";
-            this.updateNumberOnClickToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
-            this.updateNumberOnClickToolStripMenuItem.Text = "Update number on click";
-            this.updateNumberOnClickToolStripMenuItem.Click += new System.EventHandler(this.updateNumberOnClickToolStripMenuItem_Click);
             // 
             // selectBackgroundColorToolStripMenuItem
             // 
@@ -190,6 +180,26 @@
             this.selectTextColorToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.selectTextColorToolStripMenuItem.Text = "Select text color";
             this.selectTextColorToolStripMenuItem.Click += new System.EventHandler(this.selectTextColorToolStripMenuItem_Click);
+            // 
+            // updateNumberOnClickToolStripMenuItem
+            // 
+            this.updateNumberOnClickToolStripMenuItem.Name = "updateNumberOnClickToolStripMenuItem";
+            this.updateNumberOnClickToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.updateNumberOnClickToolStripMenuItem.Text = "Update number on click";
+            this.updateNumberOnClickToolStripMenuItem.Click += new System.EventHandler(this.updateNumberOnClickToolStripMenuItem_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 2000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // doNotAutoupdateToolStripMenuItem
+            // 
+            this.doNotAutoupdateToolStripMenuItem.Name = "doNotAutoupdateToolStripMenuItem";
+            this.doNotAutoupdateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.doNotAutoupdateToolStripMenuItem.Tag = "-1";
+            this.doNotAutoupdateToolStripMenuItem.Text = "Do not auto-update";
+            this.doNotAutoupdateToolStripMenuItem.Click += new System.EventHandler(this.secondToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -228,6 +238,7 @@
         private System.Windows.Forms.ToolStripMenuItem updateNumberOnClickToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem selectBackgroundColorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem selectTextColorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem doNotAutoupdateToolStripMenuItem;
     }
 }
 

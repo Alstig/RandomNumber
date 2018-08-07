@@ -17,7 +17,14 @@ namespace RandomNumber
         {
             BackColor = Settings.BackgroundColor;
             labelNumber.ForeColor = Settings.TextColor;
-            timer1.Interval = Settings.Interval;
+
+            if (Settings.Interval > -1)
+            {
+                timer1.Interval = Settings.Interval;
+                timer1.Enabled = true;
+            }
+            else
+                timer1.Enabled = false;
         }
 
         private void UpdateNumber() => labelNumber.Text = random.Next(1, 101).ToString();
@@ -85,10 +92,8 @@ namespace RandomNumber
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            ApplySettings();
             UpdateNumber();
-
-            timer1.Start();
+            ApplySettings();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -102,9 +107,12 @@ namespace RandomNumber
             {
                 UpdateNumber();
 
-                // Restart timer to reset interval
-                timer1.Stop();
-                timer1.Start();
+                if (timer1.Enabled)
+                {
+                    // Restart timer to reset interval
+                    timer1.Stop();
+                    timer1.Start();
+                }
             }
         }
 
