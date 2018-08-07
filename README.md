@@ -1,13 +1,17 @@
 # RandomNumber
 Simple random number generator
 
-Generates a new number between 1 and 100 every two seconds
+Generates a new number between 1 and 100 every two seconds (default)
+
+Right click on the number to open a menu containing settings
 
 ## Download
 
 Go to [https://github.com/Alstig/RandomNumber/releases](https://github.com/Alstig/RandomNumber/releases) to get the latest release.
 
 Just download the RandomNumber.exe file, no installation needed.
+
+The application runs on Windows 7 or newer.
 
 ## Donate
 
