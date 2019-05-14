@@ -21,10 +21,6 @@ If you feel like the app is helping you and you want do donate you can do so in 
 
 - Transfer via PokerStars.EU to user: spxTilt
 
-- Transfer via PokerStars.ES to user: spxTiltEs
-
-- Transfer via GGPoker to e-mail: joakim(at)barnstenit(dot)se
-
 - Transfer via 888poker to user: spxTilt
 
 - Transfer via PartyPoker is also an available option, send an e-mail to joakim(at)barnstenit(dot)se for details
